@@ -1,9 +1,12 @@
-import {Request,Response} from "express"; 
-import {prisma} from "prisma";
+import { Request, Response } from "express";
+import { prisma } from '../config/dbconfig';
+
+
+const router = require('express').Router();
 
 router.get('/', async (req: Request, res: Response) => {
     try {
-        const accounts = await prisma.account.findMany({ 
+        const accounts = await prisma.account.findMany({
             where: { userId: Number(req.headers.id) },
             select: { id: true, name: true }
         });
@@ -12,7 +15,7 @@ router.get('/', async (req: Request, res: Response) => {
             success: true,
             data: accounts
         });
-        
+
     } catch (error) {
         console.log(error);
         return res.status(400).send({ success: false, message: "Error getting accounts", error });
