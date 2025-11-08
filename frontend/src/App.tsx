@@ -1,17 +1,17 @@
-import './'
+import './App.tsx'
 import {BrowserRouter,Routes,Route} from 'react-router-dom'
 import SignIn from './pages/SignIn';
-import SignUp from './pages/SignUp';
+import SignUp from './pages/SignUp.tsx';
 import { ToastContainer } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css';
+//import 'react-toastify/dist/ReactToastify.css';
 import { RecoilRoot } from 'recoil';
-/*import Dashboard from './pages/Dashboard';
-import ProtectedRoute from './components/general/ProtectedRoute';
-import Layout from './Layouts/Layout';
-import Accounts from './pages/Accounts';
-import Categories from './pages/Categories';
-import NewTransactionSheet from './components/Sheets/NewTransactionSheet';
-import Transactions from './pages/Transactions';*/
+//import Dashboard from './pages/Dashboard';
+//import ProtectedRoute from './components/general/ProtectedRoute';
+//import Layout from './Layouts/Layout';
+//import Accounts from './pages/Accounts';
+//import Categories from './pages/Categories';
+//import NewTransactionSheet from './components/Sheets/NewTransactionSheet';
+//import Transactions from './pages/Transactions';
 
 
 function App() {
@@ -24,7 +24,7 @@ function App() {
             <Route path="/" element={<SignIn/>}></Route>
             <Route path="/signin" element={<SignIn/>}></Route>
             <Route path="/signup" element={<SignUp/>}></Route>
-            <Route 
+            {/*<Route 
               path="/dashboard" 
               element={<ProtectedRoute>
                           <Layout>
@@ -59,7 +59,7 @@ function App() {
                           </Layout>
                         </ProtectedRoute>}
               >
-            </Route>
+            </Route>*/}
           </Routes>
         </BrowserRouter>
       </RecoilRoot>

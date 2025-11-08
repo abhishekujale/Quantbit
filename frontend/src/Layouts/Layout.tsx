@@ -1,5 +1,5 @@
-import { ReactNode } from "react"
-import Header from "../components/Header"
+import type { ReactNode } from 'react';
+import Header from "../components/HeaderLogo"
 import SheetProvider from "../components/Providers/SheetProvider"
 import DialogueProvider from "../components/Providers/DialogueProvider"
 
