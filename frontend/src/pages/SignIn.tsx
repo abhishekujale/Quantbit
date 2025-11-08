@@ -30,7 +30,7 @@ const SignIn = () => {
             email,
             password,
           };
-          const response = await axios.post(`${import.meta.env.VITE_BACKEND_URL}/api/user/login`, user);
+          const response = await axios.post(`/api/user/login`, user);
           if (response?.data.success) {
             localStorage.setItem('authToken', response?.data.authToken);
             toast.success(response?.data.message);
