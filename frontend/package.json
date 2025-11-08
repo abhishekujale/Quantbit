@@ -10,12 +10,27 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@radix-ui/react-label": "^2.1.8",
+    "@radix-ui/react-slot": "^1.2.4",
+    "axios": "^1.13.2",
+    "class-variance-authority": "^0.7.1",
+    "clsx": "^2.1.1",
+    "date-fns": "^4.1.0",
+    "lucide-react": "^0.553.0",
     "postcss-load-config": "^6.0.1",
+<<<<<<< HEAD
     "react": "^19.1.1",
     "react-dom": "^19.1.1",
     "react-router-dom": "^7.9.5",
     "react-toastify": "^11.0.5",
     "recoil": "^0.7.7"
+=======
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0",
+    "react-router-dom": "^7.9.5",
+    "react-toastify": "^11.0.5",
+    "tailwind-merge": "^3.3.1"
+>>>>>>> fbafc4878c8774d4e62039fa13aba94a08e45e50
   },
   "devDependencies": {
     "@eslint/js": "^9.36.0",
